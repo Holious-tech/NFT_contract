@@ -1,0 +1,200 @@
+body {
+  padding-bottom: 300px;
+  padding-top: -40px;
+}
+
+.buymeacoffee-container {
+  border: 1px solid #ffffff;
+  padding: 2rem;
+  border-radius: 6px;
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.buymeacoffee-connect-button {
+  text-align: left;
+  margin-bottom: 2rem;
+  width: 1000px;
+}
+
+label {
+  font-size: 20px;
+}
+
+.buymeacoffee-inputs {
+  display: flex;
+  flex-direction: column;
+}
+
+.buymeacoffee-input {
+  padding: 0.5rem;
+  border: none;
+  margin-bottom: 1rem;
+  height: 3rem;
+  font-size: 0.8rem;
+  margin-top: 20px;
+}
+
+.buymeacoffee-input-hint {
+  font-size: 2px;
+  color: #888;
+  margin-bottom: 0.5rem;
+}
+
+.buymeacoffee-transaction-button {
+  background-color: #bf40bf;
+  color: white;
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+  margin-bottom: 20px;
+  width: 100%;
+  display: block; /* Set display to block */
+}
+
+.buymeacoffee-total-coffees {
+  margin-bottom: 2rem;
+  font-size: 1.15rem;
+}
+
+.buymeacoffee-recent-coffees {
+  font-size: 1.15rem;
+}
+
+.buymeacoffee-recent-coffee {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  margin: 1rem 0;
+  background-color: #151515;
+  border-radius: 6px;
+}
+
+.buymeacoffee-recent-coffee-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.buymeacoffee-recent-coffee-sender,
+.buymeacoffee-recent-coffee-timestamp {
+  font-size: 1rem;
+  color: #888;
+  margin-bottom: 0.5rem;
+}
+
+.buymeacoffee-recent-coffee-message {
+  color: #888;
+  font-size: 1rem;
+}
+
+.buymeacoffee-five-line-paragraph {
+  border: none;
+  padding: 2rem;
+  border-radius: 6px;
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  margin-top: 40px;
+}
+
+/* Media query for screens smaller than 768px (typical smartphones) */
+@media screen and (max-width: 768px) {
+  h1 {
+    margin-top: -170px;
+  }
+  img {
+    display: none;
+  }
+  .mobileNav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .buymeacoffee-container {
+    padding: 1rem; /* Reduce padding for smaller screens */
+    border: none;
+    margin-top: 2px;
+  }
+
+  label {
+    font-size: 1.4rem; /* Adjust font size for smaller screens */
+  }
+
+  .buymeacoffee-input {
+    font-size: 1.2rem; /* Adjust font size for smaller screens */
+  }
+
+  .buymeacoffee-input-hint {
+    font-size: 1rem; /* Adjust font size for smaller screens */
+  }
+  .buymeacoffee-connect-button {
+    text-align: center;
+    margin-bottom: 2rem;
+    width: 400px;
+  }
+}
+
+.buymeacoffee-five-line-paragraph {
+  display: none;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #f5f5f5;
+  color: black;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Media query for iPad Pro (portrait) */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  /* Adjust styles for iPad Pro (portrait) here */
+  .buymeacoffee-container {
+    max-width: 768px; /* Adjust max-width for better fit */
+    padding: 1.5rem; /* Adjust padding for smaller screens */
+  }
+
+  label {
+    font-size: 0.7rem; /* Adjust font size for iPad Pro */
+  }
+
+  .buymeacoffee-input {
+    font-size: 1.4rem; /* Adjust font size for iPad Pro */
+  }
+
+  .buymeacoffee-input-hint {
+    font-size: 1.4rem; /* Adjust font size for iPad Pro */
+  }
+}
+
+/* Media query for iPad Pro (landscape) */
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1) {
+  /* Adjust styles for iPad Pro (landscape) here */
+  .buymeacoffee-container {
+    margin-top: 40px;
+    max-width: 1200px; /* Adjust max-width for better fit */
+    padding: 2rem; /* Adjust padding for larger screens */
+    height: max-content;
+  }
+
+  label {
+    font-size: 40px; /* Adjust font size for iPad Pro */
+  }
+
+  .buymeacoffee-input {
+    font-size: 1.5rem; /* Adjust font size for iPad Pro */
+  }
+
+  .buymeacoffee-input-hint {
+    font-size: 1.2rem; /* Adjust font size for iPad Pro */
+  }
+}
